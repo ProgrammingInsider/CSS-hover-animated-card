@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    background-color: #183b56;
+}
+
+#projectName{
+    margin: 1em;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 2em;
+}
+
+.card{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+    padding: 2em;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+.bgText{
+    font-size: 13rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    white-space: nowrap;
+    margin-left: 8rem;
+    transition: all 1s ease-in-out;
+}
+
+.card1{
+    background-color: #69B578;
+}
+
+.card2{
+    background-color: #EE6055;
+}
+
+.card3{
+    background-color: #78A1BB;
+}
+
+.card:hover{
+  transform: translateY(-20px);
+}
+
+.card1:hover{
+    background-color: #437B51;
+}
+
+.card2:hover{
+    background-color: #B5274B;
+}
+
+.card3:hover{
+    background-color: #69879B;
+}
+
+.card:hover .bgText{
+    -webkit-text-fill-color: #BECF8E;
+    -webkit-text-stroke: transparent;
+    margin-left: -5rem;
+}
